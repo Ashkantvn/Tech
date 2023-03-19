@@ -1,3 +1,9 @@
+## Tech
+
+The website, helps you to check news, get some information, and compare devices.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
