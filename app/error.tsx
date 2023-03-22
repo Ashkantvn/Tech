@@ -2,7 +2,7 @@
 import React from "react";
 import { useEffect } from "react";
 
-function Error({ error, reset }: { error: Error; reset: () => void }) {
+function CustomError({ error, reset }: { error: Error; reset: () => void }) {
   useEffect(() => {
     console.error(error);
   }, [error]);
@@ -14,4 +14,4 @@ function Error({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-export default Error;
+export default CustomError;
