@@ -1,5 +1,4 @@
 import Header from "@/components/header/header";
-import { Metadata } from "next";
 
 export const metadata  = {
   title: "TECH - news, and information about digital devices",
