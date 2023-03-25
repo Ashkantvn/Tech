@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    color :#72bcd4;
+    transition: 200ms;
+}
+body,html {
+    background-color: #242424;
+}
