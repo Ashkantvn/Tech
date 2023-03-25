@@ -1,18 +1,37 @@
 import Link from "next/link";
 import React from "react";
+import { AiFillHome } from "react-icons/ai";
+import { BiNews } from "react-icons/bi";
+import { IoMdPeople } from "react-icons/io";
+import { MdCompare, MdDevices } from "react-icons/md";
 
 function Header() {
+  const smallScreenHidden = "hidden sm:block";
+  const largeScreenHidden = "sm:hidden";
+
   return (
     <header>
+
+
+      {/* home link */}
       <h1>
-        <Link href="/">TECH</Link>
+        <Link href="/">
+          <span className={smallScreenHidden}>TECH</span>
+          <AiFillHome className={largeScreenHidden} />
+        </Link>
       </h1>
-      <nav aria-label="main-navigation">
+
+      
+      <nav>
         <ul>
           {/* Devices links*/}
           <li>
-            <Link href="/devices">Devices</Link>
-            <ul>
+            <Link href="/devices">
+              <span className={smallScreenHidden}>devices</span>
+              <MdDevices className={largeScreenHidden} />
+            </Link>
+
+            <ul className="hidden">
               <li>
                 <Link href="/devices/smartphone">Smartphone</Link>
               </li>
@@ -24,17 +43,29 @@ function Header() {
               </li>
             </ul>
           </li>
+
           {/* Compare link */}
           <li>
-            <Link href="/compare">Compare</Link>
+            <Link href="/compare">
+              <span className={smallScreenHidden}>Compare</span>
+              <MdCompare className={largeScreenHidden} />
+            </Link>
           </li>
+
           {/* News link */}
           <li>
-            <Link href="/news">News</Link>
+            <Link href="/news">
+              <span className={smallScreenHidden}>News</span>
+              <BiNews className={largeScreenHidden} />
+            </Link>
           </li>
+
           {/* About Link */}
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about">
+              <span className={smallScreenHidden}>About</span>
+              <IoMdPeople className={largeScreenHidden} />
+            </Link>
           </li>
         </ul>
       </nav>
