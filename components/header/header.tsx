@@ -8,9 +8,10 @@ import { MdCompare, MdDevices } from "react-icons/md";
 function Header() {
   const smallScreenHidden:string = "hidden sm:block";
   const largeScreenHidden:string = "sm:hidden";
+  const headerClassNames:string =" bg-slate-900 fixed bottom-0 w-full flex justify-center gap-6 h-9 p-3";
 
   return (
-    <header>
+    <header className={headerClassNames}>
 
 
       {/* home link */}
@@ -23,7 +24,7 @@ function Header() {
 
       
       <nav>
-        <ul>
+        <ul className="flex gap-6">
           {/* Devices links*/}
           <li>
             <Link href="/devices">
