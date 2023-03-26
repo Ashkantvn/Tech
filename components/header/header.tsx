@@ -6,8 +6,8 @@ import { IoMdPeople } from "react-icons/io";
 import { MdCompare, MdDevices } from "react-icons/md";
 
 function Header() {
-  const smallScreenHidden = "hidden sm:block";
-  const largeScreenHidden = "sm:hidden";
+  const smallScreenHidden:string = "hidden sm:block";
+  const largeScreenHidden:string = "sm:hidden";
 
   return (
     <header>
