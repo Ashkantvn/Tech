@@ -16,7 +16,7 @@ function Header() {
 
       {/* home link */}
       <h1>
-        <Link href="/">
+        <Link title="Home" href="/">
           <span className={smallScreenHidden}>TECH</span>
           <AiFillHome className={largeScreenHidden} />
         </Link>
@@ -27,7 +27,7 @@ function Header() {
         <ul className="flex gap-6">
           {/* Devices links*/}
           <li>
-            <Link href="/devices">
+            <Link title="Devices" href="/devices">
               <span className={smallScreenHidden}>devices</span>
               <MdDevices className={largeScreenHidden} />
             </Link>
@@ -47,7 +47,7 @@ function Header() {
 
           {/* Compare link */}
           <li>
-            <Link href="/compare">
+            <Link title="Compare" href="/compare">
               <span className={smallScreenHidden}>Compare</span>
               <MdCompare className={largeScreenHidden} />
             </Link>
@@ -55,7 +55,7 @@ function Header() {
 
           {/* News link */}
           <li>
-            <Link href="/news">
+            <Link title="News" href="/news">
               <span className={smallScreenHidden}>News</span>
               <BiNews className={largeScreenHidden} />
             </Link>
@@ -63,7 +63,7 @@ function Header() {
 
           {/* About Link */}
           <li>
-            <Link href="/about">
+            <Link title="AboutUs" href="/about">
               <span className={smallScreenHidden}>About</span>
               <IoMdPeople className={largeScreenHidden} />
             </Link>
