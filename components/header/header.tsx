@@ -8,10 +8,13 @@ import { MdCompare, MdDevices } from "react-icons/md";
 function Header() {
   const smallScreenHidden:string = "hidden sm:block";
   const largeScreenHidden:string = "sm:hidden";
-  const headerClassNames:string =" bg-slate-900 fixed bottom-0 w-full flex justify-center gap-6 h-9 p-3";
+  const headerClassNames:()=>string = ()=>{
+    const headerMainClassNames = "bg-neutral-800 fixed bottom-0 w-full flex justify-center gap-6 h-9 p-3";
+    return `${headerMainClassNames}`;
+  }
 
   return (
-    <header className={headerClassNames}>
+    <header className={headerClassNames()}>
 
 
       {/* home link */}
