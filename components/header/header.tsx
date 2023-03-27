@@ -6,11 +6,14 @@ import { IoMdPeople } from "react-icons/io";
 import { MdCompare, MdDevices } from "react-icons/md";
 
 function Header() {
-  const smallScreenHidden:string = "hidden sm:block";
-  const largeScreenHidden:string = "sm:hidden";
+  const smallScreenHidden:string = "hidden lg:block";
+  const largeScreenHidden:string = "lg:hidden";
+
+
   const headerClassNames:()=>string = ()=>{
     const headerMainClassNames = "bg-neutral-800 fixed bottom-0 w-full flex justify-center gap-6 h-9 p-3";
-    return `${headerMainClassNames}`;
+    const headerMdClassNames:string = "md:h-full md:flex-col md:w-10 md:justify-between md:py-6";
+    return `${headerMainClassNames} ${headerMdClassNames}`;
   }
 
   return (
@@ -27,7 +30,7 @@ function Header() {
 
       
       <nav>
-        <ul className="flex gap-6">
+        <ul className="flex gap-6 md:flex-col md:gap-16">
           {/* Devices links*/}
           <li>
             <Link title="Devices" href="/devices">
