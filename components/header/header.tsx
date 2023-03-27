@@ -11,9 +11,12 @@ function Header() {
 
 
   const headerClassNames:()=>string = ()=>{
-    const headerMainClassNames = "bg-neutral-800 fixed bottom-0 w-full flex justify-center gap-6 h-9 p-3";
+
+    const headerMainClassNames:string = "bg-neutral-800 fixed bottom-0 w-full flex justify-center gap-6 h-9 p-3";
     const headerMdClassNames:string = "md:h-full md:flex-col md:w-10 md:justify-between md:py-6";
-    return `${headerMainClassNames} ${headerMdClassNames}`;
+    const headerLgClassNames:string = "lg:top-0 lg:flex-row lg:w-full lg:h-12 lg:p-3";
+    
+    return `${headerMainClassNames} ${headerMdClassNames} ${headerLgClassNames}`;
   }
 
   return (
@@ -30,7 +33,7 @@ function Header() {
 
       
       <nav>
-        <ul className="flex gap-6 md:flex-col md:gap-16">
+        <ul className="flex gap-6 md:flex-col md:gap-16 lg:flex-row">
           {/* Devices links*/}
           <li>
             <Link title="Devices" href="/devices">
