@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import { GiProcessor } from "react-icons/gi";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,6 +29,29 @@ function Home() {
           </p>
         </div>
       </section>
+
+      <article>
+        <section>
+          <h3>Search, and analyse devices</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illo
+            rem sequi fugit neque nam quibusdam sed quos nulla dolores!
+          </p>
+          <Link href="/devices">Start</Link>
+        </section>
+        <section>
+          <h3>Compare devices</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit neque
+            qui repudiandae! Possimus.
+          </p>
+          <Link href="/compare">Compare</Link>
+        </section>
+        <section>
+          <h3>Check news</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit quo?</p>
+        </section>
+      </article>
     </main>
   );
 }
