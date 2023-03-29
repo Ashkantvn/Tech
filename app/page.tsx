@@ -18,7 +18,7 @@ function Home() {
         <div className="lg:w-96">
           <h1 className="font-extrabold lg:hidden">TECH</h1>
           <h2 className="my-3 font-semibold opacity-60 lg:opacity-80">
-            an online magazine for dgital devices.
+            an online magazine for digital devices.
           </h2>
           <p className="text-xs opacity-30">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
