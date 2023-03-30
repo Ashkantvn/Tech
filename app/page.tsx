@@ -11,12 +11,20 @@ function Home() {
     const heroSectionMainClasses: string =
       "h-screen  flex flex-col items-center w-3/4 mx-auto text-center md:h-96";
     const heroSectionLgClasses: string =
-      "lg:items-start lg:w-2/3 lg:flex-row-reverse lg:justify-around lg:mt-32 lg:w-full lg:text-left";
+      "lg:h-80 lg:items-start lg:w-2/3 lg:flex-row-reverse lg:justify-around lg:mt-32 lg:w-full lg:text-left";
     return `${heroSectionMainClasses} ${heroSectionLgClasses}`;
   };
 
+  
   const linkToOthersClassNames: string =
-    "my-12 flex flex-col lg:flex-row w-3/4 mx-auto gap-32 [&>section>h3]:font-bold [&>section>p]:opacity-60  [&>section>p]:mb-6";
+    "my-12 flex flex-col mx-auto gap-32  [&>section>h3]:font-bold [&>section>p]:opacity-60  [&>section>p]:mb-6 lg:my-0  lg:flex-row w-3/4 ";
+
+
+
+  const footerClassNames:string=
+    "my-16 flex justify-center gap-9  md:my-8   md:[&>button]:text-3xl  lg:w-full lg:[&>button]:text-lg xl:fixed xl:bottom-3";
+
+
 
   return (
     <main className="mt-6">
@@ -62,15 +70,15 @@ function Home() {
         </section>
       </article>
 
-      <footer className="my-16 md:my-0 lg:fixed lg:bottom-0 lg:w-full flex justify-center gap-9">
+      <footer className={footerClassNames}>
         <button>
-          <AiOutlineMessage size="2.3em"/>
+          <AiOutlineMessage />
         </button>
         <button>
-          <AiOutlineMail size="3em"/>
+          <BsInstagram/>
         </button>
         <button>
-          <BsInstagram size="2em"/>
+          <AiOutlineMail/>
         </button>
       </footer>
     </main>
