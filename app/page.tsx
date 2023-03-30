@@ -1,25 +1,28 @@
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { GiProcessor } from "react-icons/gi";
+import { BsInstagram } from "react-icons/bs";
+import { AiOutlineMessage, AiOutlineMail } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
 
 function Home() {
-
-
   const heroSectionClassNames: () => string = () => {
-    const heroSectionMainClasses: string ="h-screen  flex flex-col items-center w-3/4 mx-auto text-center md:h-96";
-    const heroSectionLgClasses: string = "lg:items-start lg:w-2/3 lg:flex-row-reverse lg:justify-around lg:mt-32 lg:w-full lg:text-left";
+    const heroSectionMainClasses: string =
+      "h-screen  flex flex-col items-center w-3/4 mx-auto text-center md:h-96";
+    const heroSectionLgClasses: string =
+      "lg:items-start lg:w-2/3 lg:flex-row-reverse lg:justify-around lg:mt-32 lg:w-full lg:text-left";
     return `${heroSectionMainClasses} ${heroSectionLgClasses}`;
   };
 
-  const linkToOthersClassNames:string = "my-12 flex flex-col lg:flex-row w-3/4 mx-auto gap-32 [&>section>h3]:font-bold [&>section>p]:opacity-60  [&>section>p]:mb-6";
+  const linkToOthersClassNames: string =
+    "my-12 flex flex-col lg:flex-row w-3/4 mx-auto gap-32 [&>section>h3]:font-bold [&>section>p]:opacity-60  [&>section>p]:mb-6";
 
   return (
     <main className="mt-6">
       <section className={heroSectionClassNames()}>
         <div>
-          <GiProcessor size="12em"/>
+          <GiProcessor size="12em" />
         </div>
         <div className="lg:w-96">
           <h1 className="font-extrabold lg:hidden">TECH</h1>
