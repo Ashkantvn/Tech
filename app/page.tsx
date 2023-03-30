@@ -62,7 +62,7 @@ function Home() {
         </section>
       </article>
 
-      <footer className="my-16 flex justify-center gap-9">
+      <footer className="my-16 md:my-0 lg:fixed lg:bottom-0 lg:w-full flex justify-center gap-9">
         <button>
           <AiOutlineMessage size="2.3em"/>
         </button>
