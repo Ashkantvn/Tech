@@ -5,11 +5,16 @@ import { GiProcessor } from "react-icons/gi";
 const inter = Inter({ subsets: ["latin"] });
 
 function Home() {
+
+
   const heroSectionClassNames: () => string = () => {
     const heroSectionMainClasses: string ="h-screen  flex flex-col items-center w-3/4 mx-auto text-center md:h-96";
     const heroSectionLgClasses: string = "lg:items-start lg:w-2/3 lg:flex-row-reverse lg:justify-around lg:mt-32 lg:w-full lg:text-left";
     return `${heroSectionMainClasses} ${heroSectionLgClasses}`;
   };
+
+  const linkToOthersClassNames:string = "my-12 flex flex-col w-3/4 mx-auto gap-32 [&>section>h3]:font-bold [&>section>p]:opacity-60  [&>section>p]:mb-6";
+
   return (
     <main className="mt-6">
       <section className={heroSectionClassNames()}>
@@ -30,7 +35,7 @@ function Home() {
         </div>
       </section>
 
-      <article className="text-center">
+      <article className={linkToOthersClassNames}>
         <section>
           <h3>Search, and analyse devices</h3>
           <p>
@@ -50,6 +55,7 @@ function Home() {
         <section>
           <h3>Check news</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit quo?</p>
+          <Link href="/news">Check</Link>
         </section>
       </article>
     </main>
