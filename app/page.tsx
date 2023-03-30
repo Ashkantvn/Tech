@@ -61,6 +61,18 @@ function Home() {
           <Link href="/news">Check</Link>
         </section>
       </article>
+
+      <footer className="my-16 flex justify-center gap-9">
+        <button>
+          <AiOutlineMessage size="2.3em"/>
+        </button>
+        <button>
+          <AiOutlineMail size="3em"/>
+        </button>
+        <button>
+          <BsInstagram size="2em"/>
+        </button>
+      </footer>
     </main>
   );
 }
