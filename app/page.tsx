@@ -13,7 +13,7 @@ function Home() {
     return `${heroSectionMainClasses} ${heroSectionLgClasses}`;
   };
 
-  const linkToOthersClassNames:string = "my-12 flex flex-col w-3/4 mx-auto gap-32 [&>section>h3]:font-bold [&>section>p]:opacity-60  [&>section>p]:mb-6";
+  const linkToOthersClassNames:string = "my-12 flex flex-col lg:flex-row w-3/4 mx-auto gap-32 [&>section>h3]:font-bold [&>section>p]:opacity-60  [&>section>p]:mb-6";
 
   return (
     <main className="mt-6">
