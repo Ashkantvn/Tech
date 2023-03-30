@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 function Home() {
   const heroSectionClassNames: () => string = () => {
-    const heroSectionMainClasses: string ="flex flex-col items-center w-3/4 mx-auto text-center";
-    const heroSectionLgClasses: string = "lg:w-2/3 lg:flex-row-reverse lg:justify-around lg:mt-32 lg:w-full lg:text-left";
+    const heroSectionMainClasses: string ="h-screen  flex flex-col items-center w-3/4 mx-auto text-center md:h-96";
+    const heroSectionLgClasses: string = "lg:items-start lg:w-2/3 lg:flex-row-reverse lg:justify-around lg:mt-32 lg:w-full lg:text-left";
     return `${heroSectionMainClasses} ${heroSectionLgClasses}`;
   };
   return (
@@ -30,7 +30,7 @@ function Home() {
         </div>
       </section>
 
-      <article>
+      <article className="text-center">
         <section>
           <h3>Search, and analyse devices</h3>
           <p>
