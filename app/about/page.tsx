@@ -13,11 +13,12 @@ import {
 } from "react-icons/ai";
 
 function About() {
+  const headingStyle:string="font-bold";
   return (
-    <main className="my-12">
+    <main className="my-12 w-4/5 mx-auto">
       <article>
         <section>
-          <h2>About TECH</h2>
+          <h2 className={headingStyle}>About TECH</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, non
             ad provident esse ea incidunt et vel rerum saepe atque distinctio
@@ -31,11 +32,11 @@ function About() {
           <FaNewspaper />
           <MdCompareArrows />
           <GiProcessor />
-          <h1>an online magazine for digital devices.</h1>
+          <h1 className={headingStyle}>an online magazine for digital devices.</h1>
         </section>
 
         <section>
-          <h2>TECH story</h2>
+          <h2 className={headingStyle}>TECH story</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
             illo quia culpa voluptates sit, non ullam nisi veniam expedita eaque
@@ -46,12 +47,12 @@ function About() {
 
         <section>
           <div>
-            <h2>What is it about?</h2>
+            <h2 className={headingStyle}>What is it about?</h2>
             <span>Digital devices : </span>
           </div>
 
           <div>
-            <h3>
+            <h3 className={headingStyle}>
               <IoHardwareChipOutline />
               Information
             </h3>
@@ -63,7 +64,7 @@ function About() {
           </div>
 
           <div>
-            <h3>
+            <h3 className={headingStyle}>
               <FaNewspaper />
               News
             </h3>
@@ -74,7 +75,7 @@ function About() {
 
       <footer>
         <section>
-          <h4>Contacts:</h4>
+          <h4 className={headingStyle}>Contacts:</h4>
           <button>
             <AiOutlineMessage />
           </button>
@@ -87,7 +88,7 @@ function About() {
         </section>
 
         <section>
-          <h4>Join us:</h4>
+          <h4 className={headingStyle}>Join us:</h4>
           <button>
             <FaTelegramPlane />
           </button>
@@ -104,7 +105,7 @@ function About() {
 
         <section>
           <label>
-            <h4>Send your comment:</h4>
+            <h4 className={headingStyle}>Send your comment:</h4>
             <input type="text" placeholder="comment" />
           </label>
           <label>
