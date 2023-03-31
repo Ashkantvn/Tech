@@ -16,6 +16,7 @@ function About() {
   const headingStyle: string = "font-bold";
   const sectionsOfArticleStyle: string =
     "[&>section>p]:text-sm [&>section>p]: [&>section>p,div]:opacity-60 [&>section>div]:opacity-60 [&>section]:my-16";
+
   return (
     <main className="my-16 w-5/6 mx-auto">
       <article className={sectionsOfArticleStyle}>
@@ -29,14 +30,18 @@ function About() {
           </p>
         </section>
 
-        <section>
-          <IoHardwareChipOutline />
-          <FaNewspaper />
-          <MdCompareArrows />
-          <GiProcessor />
+        <section className="border-y rounded-2xl text-center py-4 [&>div]:flex [&>div]:justify-around">
+          <div >
+            <IoHardwareChipOutline className="text-2xl rotate-12" />
+            <FaNewspaper className="text-4xl rotate-45" />
+          </div>
           <h1 className={headingStyle}>
             an online magazine for digital devices.
           </h1>
+          <div >
+            <MdCompareArrows className="text-6xl -rotate-12" />
+            <GiProcessor className="text-xl -rotate-6" />
+          </div>
         </section>
 
         <section>
@@ -51,9 +56,9 @@ function About() {
 
         <section>
           <h2 className={headingStyle}>What is it about?</h2>
-          <span>Digital devices : </span>
+          <h4 className="ml-3 my-6 text-sm">Digital devices : </h4>
 
-          <div>
+          <div className="ml-16 [&>h3]:flex [&>h3]:items-center [&>h3]:gap-3 [&>h3]:my-3 [&>p]:ml-9">
             <h3 className={headingStyle}>
               <IoHardwareChipOutline />
               Information
@@ -63,9 +68,7 @@ function About() {
               repudiandae dignissimos, illo quia distinctio veritatis asperiores
               quibusdam.
             </p>
-          </div>
 
-          <div>
             <h3 className={headingStyle}>
               <FaNewspaper />
               News
