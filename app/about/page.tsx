@@ -11,6 +11,7 @@ import {
   AiOutlineLinkedin,
   AiOutlineYoutube,
 } from "react-icons/ai";
+import style from "../../style/about.module.css";
 
 function About() {
   const headingStyle: string = "font-bold";
@@ -115,13 +116,15 @@ function About() {
         <section>
           <label>
             <h4 className={headingStyle}>Send your comment:</h4>
-            <input type="text" placeholder="comment" />
+            <input className={style.input} type="text" placeholder="comment" />
           </label>
 
           <label>
             <h6 className={headingStyle}>Email:</h6>
-            <input type="text" placeholder="optional" />
+            <input className={style.input} type="text" placeholder="optional" />
           </label>
+
+
           <button className=" ml-3">
             <AiOutlineSend />
           </button>
