@@ -79,7 +79,7 @@ function About() {
         </section>
       </article>
 
-      <footer className=" [&>section>div]:my-3 [&>section>div]:flex [&>section>div]:gap-3 [&>section>div]:ml-3">
+      <footer className="md:border-t md:flex md:justify-between [&>section>div]:my-3 [&>section>div]:flex [&>section>div]:gap-3 [&>section>div]:ml-3">
         <section>
           <h4 className={headingStyle}>Contacts:</h4>
           <div>
@@ -122,7 +122,7 @@ function About() {
           <button className=" ml-3">
             <AiOutlineSend />
           </button>
-          
+
           <label>
             <h6 className={headingStyle}>Email:</h6>
             <input className={style.input} type="text" placeholder="optional" />
