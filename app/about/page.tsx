@@ -119,15 +119,14 @@ function About() {
             <input className={style.input} type="text" placeholder="comment" />
           </label>
 
+          <button className=" ml-3">
+            <AiOutlineSend />
+          </button>
+          
           <label>
             <h6 className={headingStyle}>Email:</h6>
             <input className={style.input} type="text" placeholder="optional" />
           </label>
-
-
-          <button className=" ml-3">
-            <AiOutlineSend />
-          </button>
         </section>
       </footer>
     </main>
