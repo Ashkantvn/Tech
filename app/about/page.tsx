@@ -31,14 +31,14 @@ function About() {
         </section>
 
         <section className="border-y rounded-2xl text-center py-4 [&>div]:flex [&>div]:justify-around">
-          <div >
+          <div>
             <IoHardwareChipOutline className="text-2xl rotate-12" />
             <FaNewspaper className="text-4xl rotate-45" />
           </div>
           <h1 className={headingStyle}>
             an online magazine for digital devices.
           </h1>
-          <div >
+          <div>
             <MdCompareArrows className="text-6xl -rotate-12" />
             <GiProcessor className="text-xl -rotate-6" />
           </div>
@@ -78,46 +78,53 @@ function About() {
         </section>
       </article>
 
-      <footer>
+      <footer className=" [&>section>div]:my-3 [&>section>div]:flex [&>section>div]:gap-3 [&>section>div]:ml-3">
         <section>
           <h4 className={headingStyle}>Contacts:</h4>
-          <button>
-            <AiOutlineMessage />
-          </button>
-          <button>
-            <AiOutlineMail />
-          </button>
-          <button>
-            <AiOutlineWhatsApp />
-          </button>
+          <div>
+            <button>
+              <AiOutlineMessage />
+            </button>
+            <button>
+              <AiOutlineMail />
+            </button>
+            <button>
+              <AiOutlineWhatsApp />
+            </button>
+          </div>
         </section>
 
         <section>
           <h4 className={headingStyle}>Join us:</h4>
-          <button>
-            <FaTelegramPlane />
-          </button>
-          <button>
-            <AiOutlineInstagram />
-          </button>
-          <button>
-            <AiOutlineLinkedin />
-          </button>
-          <button>
-            <AiOutlineYoutube />
-          </button>
+          <div>
+            <button>
+              <FaTelegramPlane />
+            </button>
+            <button>
+              <AiOutlineInstagram />
+            </button>
+            <button>
+              <AiOutlineLinkedin />
+            </button>
+            <button>
+              <AiOutlineYoutube />
+            </button>
+          </div>
         </section>
 
         <section>
+
           <label>
             <h4 className={headingStyle}>Send your comment:</h4>
             <input type="text" placeholder="comment" />
           </label>
+
           <label>
             E-mail:
             <input type="text" placeholder="optional" />
           </label>
-          <button>
+          
+          <button >
             <AiOutlineSend />
           </button>
         </section>
