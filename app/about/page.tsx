@@ -13,10 +13,12 @@ import {
 } from "react-icons/ai";
 
 function About() {
-  const headingStyle:string="font-bold";
+  const headingStyle: string = "font-bold";
+  const sectionsOfArticleStyle: string =
+    "[&>section>p]:text-sm [&>section>p]: [&>section>p,div]:opacity-60 [&>section>div]:opacity-60 [&>section]:my-16";
   return (
-    <main className="my-12 w-4/5 mx-auto">
-      <article>
+    <main className="my-16 w-5/6 mx-auto">
+      <article className={sectionsOfArticleStyle}>
         <section>
           <h2 className={headingStyle}>About TECH</h2>
           <p>
@@ -32,7 +34,9 @@ function About() {
           <FaNewspaper />
           <MdCompareArrows />
           <GiProcessor />
-          <h1 className={headingStyle}>an online magazine for digital devices.</h1>
+          <h1 className={headingStyle}>
+            an online magazine for digital devices.
+          </h1>
         </section>
 
         <section>
@@ -46,10 +50,8 @@ function About() {
         </section>
 
         <section>
-          <div>
-            <h2 className={headingStyle}>What is it about?</h2>
-            <span>Digital devices : </span>
-          </div>
+          <h2 className={headingStyle}>What is it about?</h2>
+          <span>Digital devices : </span>
 
           <div>
             <h3 className={headingStyle}>
@@ -99,7 +101,7 @@ function About() {
             <AiOutlineLinkedin />
           </button>
           <button>
-            <AiOutlineYoutube/>
+            <AiOutlineYoutube />
           </button>
         </section>
 
