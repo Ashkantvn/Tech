@@ -7,8 +7,8 @@ function CustomError({ error, reset }: { error: Error; reset: () => void }) {
     console.error(error);
   }, [error]);
   return (
-    <div>
-      <h2>Something went wrong!</h2>
+    <div className="text-center mt-60">
+      <h2 className="my-3">Something went wrong!</h2>
       <button onClick={() => reset()}>Try again</button>
     </div>
   );
