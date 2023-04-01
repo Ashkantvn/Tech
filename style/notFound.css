@@ -1,0 +1,16 @@
+.shadow-stroke-text{ 
+   color: #242424;
+   -webkit-text-stroke: 1px #72bcd4;
+   text-shadow: 0 0 10px #72bcd4;
+}
+
+.not-found-button{
+   border: 1px solid ;
+   padding: 0.5em 1em;
+   border-radius: 10px;
+}
+.not-found-button:hover{
+   background: #72bcd4;
+   color: #242424;
+   box-shadow: 0 0 3px 3px #72bcd4;
+}
