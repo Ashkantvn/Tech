@@ -1,11 +1,13 @@
+import Link from "next/link";
 import React from "react";
 
 function NotFound() {
   return (
-    <div>
+    <main>
       <h1>404</h1>
-      NotFound
-    </div>
+      <h2>Page not found</h2>
+      <Link href="/">Home</Link>
+    </main>
   );
 }
 
