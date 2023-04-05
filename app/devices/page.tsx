@@ -45,7 +45,7 @@ async function Devicespage() {
         </ul>
       </div>
 
-      <ul>{mappedDevices}</ul>
+      <ul className="grid grid-cols-2 gap-y-8 justify-between">{mappedDevices}</ul>
     </main>
   );
 }
