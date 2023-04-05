@@ -1,12 +1,15 @@
+import Card from "@/components/card/card";
 import getAllDevices from "@/lib/getAllDevices";
 import Link from "next/link";
 import React from "react";
 import { BsLaptop, BsPhone, BsSearch, BsTablet } from "react-icons/bs";
 
 async function Devicespage() {
-  const devicesData:Promise<device[]>= getAllDevices();
-  const devices:device[] = await devicesData;
-
+  const devicesData: Promise<device[]> = getAllDevices();
+  const devices: device[] = await devicesData;
+  const mappedDevices: React.ReactNode = devices.map((item: device) => {
+    return <Card {...item}/>;
+  });
   return (
     <main>
       <h1>Devices page</h1>
@@ -41,6 +44,8 @@ async function Devicespage() {
           </li>
         </ul>
       </div>
+
+      <ul>{mappedDevices}</ul>
     </main>
   );
 }
