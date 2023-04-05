@@ -11,11 +11,11 @@ async function Devicespage() {
     return <Card {...item}/>;
   });
   return (
-    <main>
-      <h1>Devices page</h1>
-      <label>
-        <h4>Search your favourite device:</h4>
-        <input type="search" />
+    <main className="my-9 text-center">
+      <h1 className="my-3 text-lg font-bold">Devices page</h1>
+      <label className="mx-auto flex flex-col items-center gap-3">
+        <h4 className="text-sm">Search your favourite device:</h4>
+        <input className="bg-transparent border-b focus:outline-none focus:border-b-4 p-2 rounded-md"  type="search" />
         <button>
           <BsSearch />
         </button>
