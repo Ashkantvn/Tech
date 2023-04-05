@@ -1,0 +1,110 @@
+[
+  {
+    "id": 651687,
+    "device_name": "Apple iPhone 14",
+    "announced": "2022, September 07",
+    "os": "iOS 16",
+    "display": "6.1 inches | 1170X2532 | Super Retina XDR OLED",
+    "memory": "128GB,256GB,512GB | 6GB RAM",
+    "camera": "12 MP | 12MP",
+    "battery": "3279 mAh",
+    "price": "$709",
+    "type": "Smartphone"
+  },
+  {
+    "id": 764201,
+    "device_name": "Samsung Galaxy M54",
+    "announced": "2023, March 22",
+    "os": "Android 13",
+    "display": "6.7 inches | 1080X2400 | Super AMOLED",
+    "memory": "128GB, 256GB | 8GB RAM",
+    "camera": "108 MP 8 MP 2 MP | 32MP",
+    "battery": "6000 mAh",
+    "price": "Unknown",
+    "type": "Smartphone"
+  },
+  {
+    "id": 132955,
+    "device_name": "Asus Zenfone 9",
+    "announced": "2022, July 28",
+    "os": "Android 12",
+    "display": "5.9 inches | 1080X2400 | Super AMOLED",
+    "memory": "128GB 256GB | 8GB 16GB RAM",
+    "camera": "50MP 12MP | 12MP",
+    "battery": "4300 mAh",
+    "price": "$597",
+    "type": "Smartphone"
+  },
+  {
+    "id": 473083,
+    "device_name": "Apple iPad mini 2021",
+    "announced": "2021, September 14",
+    "os": "iPadOS 15",
+    "display": "8.3 inches | 1488X2266 | Liquid Retina IPS LCD",
+    "memory": "64GB 256GB | 4GB RAM",
+    "camera": "12MP | 12MP",
+    "battery": "4400 mAh",
+    "price": "Unknown",
+    "type": "Tablet"
+  },
+  {
+    "id": 424250,
+    "device_name": "Motorola Moto G73",
+    "announced": "2023, January 24",
+    "os": "Android 13",
+    "display": "6.5 inches | 1080X2400 | IPS LCD",
+    "memory": "128 GB, 256GB | 8GB RAM",
+    "camera": "50 MP 8 MP | 16MP",
+    "battery": "5000 mAh",
+    "price": "$499",
+    "type": "Smartphone"
+  },
+  {
+    "id": 560121,
+    "device_name": "Doogee S100",
+    "announced": "2023, February 07",
+    "os": "Android 12",
+    "display": "6.58 inches | 1080x2408 | IPS LCD ",
+    "memory": "256 GB | 12GB RAM",
+    "camera": "108 MP, 20MP, 16MP | 32 MP ",
+    "battery": "10800 mAh",
+    "price": "$282.32 / $419.99",
+    "type": "Smartphone"
+  },
+  {
+    "id": 183617,
+    "device_name": "Samsung Galaxy Tab S6 Lite",
+    "announced": "2020, April 02",
+    "os": "Android 10",
+    "display": "10.4 inches | 1200x2000 | TFT LCD",
+    "memory": "64 GB, 128GB | 4GB RAM",
+    "camera": "8 MP | 5 MP ",
+    "battery": "5000 mAh",
+    "price": "Unknown",
+    "type": "Tablet"
+  },
+  {
+    "id": 734633,
+    "device_name": "ASUS ROG Strix G17 (2023)",
+    "announced": "2023",
+    "os": "Windows 11 home",
+    "display": "17.3 inches | 1920X1080 | IPS ",
+    "memory": "1 TB SSD | 16 GB RAM",
+    "camera": "*",
+    "battery": "5675mAh",
+    "price": "Unknown",
+    "type": "Laptop"
+  },
+  {
+    "id": 619500,
+    "device_name": "Acer Aspire 5 A515-45-R74Z",
+    "announced": "*",
+    "os": "Windows 11",
+    "display": "15.6 inches | 1366X768 | IPS",
+    "memory": "256 GB NVMe SSD | 8 GB RAM",
+    "camera": "5 MP",
+    "battery": "3220 mAh",
+    "price": "$468.90",
+    "type": "Laptop"
+  }
+]
