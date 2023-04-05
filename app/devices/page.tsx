@@ -21,9 +21,9 @@ async function Devicespage() {
         </button>
       </label>
 
-      <div>
-        <h3>Devices types:</h3>
-        <ul>
+      <div className="my-16 border-b-2">
+        <h3 className=" font-bold">Devices type</h3>
+        <ul className="flex flex-col gap-9 my-9 [&>li>a>svg]:mx-auto [&>li>a>svg]:text-3xl [&>li>a]:hover:bg-slate-800">
           <li>
             <Link href="/devices/smartphone">
               <BsPhone />
