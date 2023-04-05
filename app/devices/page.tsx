@@ -1,8 +1,12 @@
+import getAllDevices from "@/lib/getAllDevices";
 import Link from "next/link";
 import React from "react";
 import { BsLaptop, BsPhone, BsSearch, BsTablet } from "react-icons/bs";
 
-function Devicespage() {
+async function Devicespage() {
+  const devicesData:Promise<device[]>= getAllDevices();
+  const devices:device[] = await devicesData;
+
   return (
     <main>
       <h1>Devices page</h1>
