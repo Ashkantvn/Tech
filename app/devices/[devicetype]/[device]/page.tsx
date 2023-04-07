@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { BiLeftArrowCircle } from "react-icons/bi";
 
 function DevicePage() {
-  const deviceId: number = Number(usePathname().slice(20));
+  const deviceId: number = Number(usePathname().replace(/[^0-9]/g,""));
   const [device, setDevice] = useState<device>();
 
   //fetch data
