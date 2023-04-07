@@ -37,7 +37,7 @@ async function Devicespage() {
             </Link>
           </li>
           <li>
-            <Link href="/devices/laptops">
+            <Link href="/devices/laptop">
               <BsLaptop />
               <h2>Laptop</h2>
             </Link>
