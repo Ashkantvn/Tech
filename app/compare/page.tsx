@@ -11,7 +11,7 @@ function Compare() {
 
   //mapping devices function
   const mappedDevices: React.ReactNode = devices?.map((item: device) => (
-    <button key={item.id}>{item.device_name}</button>
+    <button onClick={()=>{!firstDevice ? setFirstDevice(item):setSecondDevice(item)}} key={item.id}>{item.device_name}</button>
   ));
 
   //fetch functions
