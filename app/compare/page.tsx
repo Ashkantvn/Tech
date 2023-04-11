@@ -9,12 +9,12 @@ function Compare() {
   const [typeofDevice, setTypeOfDevice] = useState<string>("");
 
 
-  //mapping devices function
+  //map all devices and set first and second devices function
   const mappedDevices: React.ReactNode = devices?.map((item: device) => (
     <button onClick={()=>{!firstDevice ? setFirstDevice(item):setSecondDevice(item)}} key={item.id}>{item.device_name}</button>
   ));
 
-  //fetch functions
+  //fetch and filter devices functions
   const fetchCompareDevices: () => void = async () => {
     const devicesData: device[] = await getAllDevices();
     const filterDevices: device[] = devicesData.filter(
