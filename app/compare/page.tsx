@@ -5,13 +5,34 @@ import React, { useEffect, useState } from "react";
 function Compare() {
   const [devices, setDevices] = useState<device[]>();
   const [firstDevice, setFirstDevice] = useState<device>();
-  const [secondDevice, setSecondDevice] = useState<device>();
+  const [secondDevice, setSecondDevice] = useState<device | null>();
   const [typeofDevice, setTypeOfDevice] = useState<string>("");
 
-
   //map all devices and set first and second devices function
+  const deviceClickHandler: (item: device) => void = (item) => {
+    if (firstDevice) {
+      if (secondDevice) {
+
+        setFirstDevice(item);
+        setSecondDevice(null);
+
+      } else {
+        setSecondDevice(item);
+      }
+
+    } else {
+      setFirstDevice(item);
+    }
+  };
   const mappedDevices: React.ReactNode = devices?.map((item: device) => (
-    <button onClick={()=>{!firstDevice ? setFirstDevice(item):setSecondDevice(item)}} key={item.id}>{item.device_name}</button>
+    <button
+      onClick={() => {
+        deviceClickHandler(item);
+      }}
+      key={item.id}
+    >
+      {item.device_name}
+    </button>
   ));
 
   //fetch and filter devices functions
@@ -38,7 +59,6 @@ function Compare() {
             }}
             className=" bg-transparent mx-1 border-b [&>option]:font-bold"
             name="device-type"
-            id=""
           >
             <option value="Smartphone">Smartphone</option>
             <option value="Laptop">Laptop</option>
@@ -55,7 +75,7 @@ function Compare() {
         <section>
           <h3>Device - 1</h3>
           <ul>
-            <li></li>
+            <li>{firstDevice?.device_name}</li>
             <li>
               <span>announced :</span> <br /> {firstDevice?.announced}
             </li>
@@ -83,7 +103,7 @@ function Compare() {
         <section>
           <h3>Device - 2</h3>
           <ul>
-            <li></li>
+            <li>{secondDevice?.device_name}</li>
             <li>
               <span>announced :</span> <br /> {secondDevice?.announced}
             </li>
