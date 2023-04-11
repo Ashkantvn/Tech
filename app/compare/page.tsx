@@ -2,19 +2,22 @@ import React from "react";
 
 function Compare() {
   return (
-    <main>
+    <main className="m-9">
       <label>
         Select type of device :
-        <select name="device-type" id="">
+        <select className=" bg-transparent mx-1 border-b [&>option]:font-bold" name="device-type" id="">
           <option value="Smartphone">Smartphone</option>
           <option value="Laptop">Laptop</option>
           <option value="Tablet">Tablet</option>
         </select>
       </label>
-      <article >
+      <article className="flex justify-around my-32" >
         <section>
           <h3>Device - 1</h3>
           <ul>
+            <li>
+
+            </li>
             <li>
               <span>announced :</span>
             </li>
@@ -41,6 +44,9 @@ function Compare() {
         <section>
           <h3>Device - 2</h3>
           <ul>
+            <li>
+              
+            </li>
             <li>
               <span>announced :</span>
             </li>
