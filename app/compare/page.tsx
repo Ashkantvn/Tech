@@ -51,7 +51,7 @@ function Compare() {
         {mappedDevices}
       </div>
 
-      <article className="flex justify-around my-16">
+      <article className="flex justify-around my-16 gap-3 [&>section>ul]:flex [&>section>ul]:flex-col [&>section>ul]:gap-3 [&>section>ul>li>span]:opacity-50 [&>section]:border [&>section]:p-3">
         <section>
           <h3>Device - 1</h3>
           <ul>
