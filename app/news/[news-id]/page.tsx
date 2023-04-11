@@ -1,9 +1,34 @@
-import React from 'react'
+"use client";
+import getAllNews from "@/lib/getAllNews";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 function SpecificNews() {
+  const newsId: number = Number(usePathname().replace(/[^0-9]/g, ""));
+  const [news, setNews] = useState<news>();
+
+  const fetchNews: () => void = async () => {
+    const newsData: news[] = await getAllNews();
+    const specificNews: news = newsData.filter(
+      (item:news) => item.id === newsId
+    )[0];
+
+    setNews(specificNews);
+  };
+  useEffect(() => {
+    fetchNews();
+  }, []);
   return (
-    <div>SpecificNews</div>
-  )
+    <div className="m-9">
+      <h1 className="font-bold text-sm">{news?.title}</h1>
+      <p className="my-9">{news?.content}</p>
+      <h6 className="m-9 opacity-90">important words: <br /> {news?.keywords}</h6>
+      <address className="opacity-30">
+        <span>Written by : {news?.author}</span><br />
+        <time dateTime={news?.date}>{news?.date}</time>
+      </address>
+    </div>
+  );
 }
 
-export default SpecificNews
+export default SpecificNews;
