@@ -17,9 +17,9 @@ async function News() {
   });
 
   return (
-    <main className="my-12">
+    <main className="my-12 md:w-5/6 md:mx-auto">
       <h1 className="mx-9 mb-9 font-bold text-lg">News page</h1>
-      <ul className="mx-12 grid gap-12">{mappedNews}</ul>
+      <ul className="mx-12 grid gap-12 md:grid-cols-2">{mappedNews}</ul>
     </main>
   );
 }
