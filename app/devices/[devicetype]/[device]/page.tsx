@@ -5,18 +5,18 @@ import React, { useEffect, useState } from "react";
 import { BiLeftArrowCircle } from "react-icons/bi";
 
 function DevicePage() {
-  const deviceId: number = Number(usePathname().replace(/[^0-9]/g,""));
+  const deviceId: number = Number(usePathname().replace(/[^0-9]/g, ""));
   const [device, setDevice] = useState<device>();
 
   //fetch data
-  const fetchDevice = async () => {
-    const devicesData: device[] = await getAllDevices();
-    const filterDevices: device = devicesData.filter(
-      (item) => item.id === deviceId
-    )[0];
-    setDevice(filterDevices);
-  };
   useEffect(() => {
+    const fetchDevice = async () => {
+      const devicesData: device[] = await getAllDevices();
+      const filterDevices: device = devicesData.filter(
+        (item) => item.id === deviceId
+      )[0];
+      setDevice(filterDevices);
+    };
     fetchDevice();
   }, []);
 
