@@ -10,7 +10,7 @@ async function Devicespage() {
   const devicesData: Promise<device[]> = getAllDevices();
   const devices: device[] = await devicesData;
   const mappedDevices: React.ReactNode = devices.map((item: device) => {
-    return <Card {...item} />;
+    return <Card key={item.id} {...item} />;
   });
 
 

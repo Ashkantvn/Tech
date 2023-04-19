@@ -14,15 +14,15 @@ function DeviceTypePage() {
   });
 
   //fetch functions
-  const fetchSmartphone = async () => {
-    const devicesData: device[] = await getAllDevices();
-    const filterDevices: device[] = devicesData.filter((item) =>
-      item.type.toLowerCase().includes(pathName)
-    );
-    setdevice(filterDevices);
-  };
   useEffect(() => {
-    fetchSmartphone();
+    const fetchFilteredDevice = async () => {
+      const devicesData: device[] = await getAllDevices();
+      const filterDevices: device[] = devicesData.filter((item) =>
+        item.type.toLowerCase().includes(pathName)
+      );
+      setdevice(filterDevices);
+    };
+    fetchFilteredDevice();
   }, []);
 
   return (
