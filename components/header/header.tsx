@@ -40,18 +40,6 @@ function Header() {
               <span className={smallScreenHidden}>devices</span>
               <MdDevices className={largeScreenHidden} />
             </Link>
-
-            <ul className="hidden">
-              <li>
-                <Link href="/devices/smartphone">Smartphone</Link>
-              </li>
-              <li>
-                <Link href="/devices/laptop">Laptop</Link>
-              </li>
-              <li>
-                <Link href="/devices/tablet">Tablet</Link>
-              </li>
-            </ul>
           </li>
 
           {/* Compare link */}
