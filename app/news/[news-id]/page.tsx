@@ -7,16 +7,16 @@ function SpecificNews() {
   const newsId: number = Number(usePathname().replace(/[^0-9]/g, ""));
   const [news, setNews] = useState<news>();
 
-  const fetchNews: () => void = async () => {
-    const newsData: news[] = await getAllNews();
-    const specificNews: news = newsData.filter(
-      (item:news) => item.id === newsId
-    )[0];
-
-    setNews(specificNews);
-  };
   useEffect(() => {
-    fetchNews();
+    const fetchSpecificNews: () => void = async () => {
+      const newsData: news[] = await getAllNews();
+      const specificNews: news = newsData.filter(
+        (item: news) => item.id === newsId
+      )[0];
+
+      setNews(specificNews);
+    };
+    fetchSpecificNews();
   }, []);
   return (
     <div className="m-9 md:w-3/4 md:mx-auto lg:mt-16">
