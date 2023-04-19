@@ -36,15 +36,15 @@ function Compare() {
   ));
 
   //fetch and filter devices functions
-  const fetchCompareDevices: () => void = async () => {
-    const devicesData: device[] = await getAllDevices();
-    const filterDevices: device[] = devicesData.filter(
-      (item: device) => item.type === typeofDevice
-    );
-    setDevices(filterDevices);
-  };
   useEffect(() => {
-    fetchCompareDevices();
+    const fetchDevicesForCompare: () => void = async () => {
+      const devicesData: device[] = await getAllDevices();
+      const filterDevices: device[] = devicesData.filter(
+        (item: device) => item.type === typeofDevice
+      );
+      setDevices(filterDevices);
+    };
+    fetchDevicesForCompare();
   }, [typeofDevice]);
 
   return (
