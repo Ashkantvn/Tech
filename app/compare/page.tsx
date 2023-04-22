@@ -60,6 +60,7 @@ function Compare() {
             className=" bg-transparent mx-1 border-b [&>option]:font-bold"
             name="device-type"
           >
+            <option value="">Select type</option>
             <option value="Smartphone">Smartphone</option>
             <option value="Laptop">Laptop</option>
             <option value="Tablet">Tablet</option>
