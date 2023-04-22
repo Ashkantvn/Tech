@@ -48,7 +48,7 @@ function Compare() {
   }, [typeofDevice]);
 
   return (
-    <main className="m-9 md:w-5/6 md:mx-auto">
+    <main className="mt-16 m-9 md:w-5/6 md:mx-auto">
       <div>
         <h1>Compare Page</h1>
         <label>
@@ -60,6 +60,7 @@ function Compare() {
             className=" bg-transparent mx-1 border-b [&>option]:font-bold"
             name="device-type"
           >
+            <option value="">Select type</option>
             <option value="Smartphone">Smartphone</option>
             <option value="Laptop">Laptop</option>
             <option value="Tablet">Tablet</option>
@@ -67,7 +68,7 @@ function Compare() {
         </label>
       </div>
 
-      <div className="h-32 md:h-64 lg:flex-row lg:flex-wrap lg:h-32 overflow-scroll flex flex-col gap-9 mt-16 border-y">
+      <div className="h-32 md:h-64 lg:flex-row lg:flex-wrap lg:h-32  overflow-scroll flex flex-col gap-9 mt-16 border-y">
         {mappedDevices}
       </div>
 

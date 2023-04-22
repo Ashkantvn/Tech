@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*::-webkit-scrollbar{
+    display: none;
+}
 *{
     color :#72bcd4;
     transition: 200ms;
