@@ -2,7 +2,7 @@ import Card from "@/components/card/card";
 import getAllDevices from "@/lib/getAllDevices";
 import Link from "next/link";
 import React from "react";
-import { BsLaptop, BsPhone, BsSearch, BsTablet } from "react-icons/bs";
+import { BsLaptop, BsPhone, BsTablet } from "react-icons/bs";
 
 async function Devicespage() {
 
