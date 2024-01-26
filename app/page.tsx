@@ -1,10 +1,8 @@
-import { Inter } from "next/font/google";
 import Link from "next/link";
 import { GiProcessor } from "react-icons/gi";
 import { BsInstagram } from "react-icons/bs";
 import { AiOutlineMessage, AiOutlineMail } from "react-icons/ai";
 
-const inter = Inter({ subsets: ["latin"] });
 
 function Home() {
   const heroSectionClassNames: () => string = () => {
