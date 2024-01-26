@@ -4,6 +4,9 @@ import Link from "next/link";
 import React from "react";
 import { BsLaptop, BsPhone, BsTablet } from "react-icons/bs";
 
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 async function Devicespage() {
 
 

@@ -17,7 +17,7 @@ function SpecificNews() {
       setNews(specificNews);
     };
     fetchSpecificNews();
-  }, []);
+  }, [newsId]);
   return (
     <div className="m-9 md:w-3/4 md:mx-auto lg:mt-16">
       <h1 className="font-bold text-sm">{news?.title}</h1>

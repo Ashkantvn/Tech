@@ -3,6 +3,9 @@ import Link from "next/link";
 import React from "react";
 import style from "@/style/news.module.css";
 
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 async function News() {
   const newsData: Promise<news[]> = getAllNews();
   const news: news[] = await newsData;
